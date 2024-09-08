@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+}
+
+:root {
+  --bg: #040D1F;
+  --C: "Comfortaa", sans-serif;
+  --R: "Roboto", sans-serif;
+  --M: "Monserat", sans-serif;
+  --white: #fff;
+  --black: #000;
+  --orange: #ED8E00;
+  --lightOrange: #F18128;
+}
+
+body {
+  min-width: 320px;
+  background: var(--bg);
+  color: var(--white);
+}
+
+.container {
+  max-width: 1140px;
+  width: 100%;
+  height: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.btn {
+  padding: 17px 48px;
+  color: var(--white);
+  font-family: var(--R);
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  background: var(--lightOrange);
+  border-radius: 4px;
+  transition: 0.3s;
+  border: none;
+}
+
+.btn:hover{
+background: var(--bg);
+}
