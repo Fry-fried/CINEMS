@@ -1,0 +1,129 @@
+.main {
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+
+
+.main__desc-title {
+    font-family: Comfortaa;
+    font-size: 36px;
+    font-weight: 400;
+    border-bottom: 2px solid #fff;
+    width: 98px;
+    transition: 0.3s;
+    padding-bottom: 10px;
+}
+
+.main__desc-title:hover {
+    color: #F18128;
+    border-bottom: #F18128 2px solid;
+
+}
+
+.main__grid {
+    display: grid;
+    max-width: 1140px;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    padding-top: 54px;
+    gap: 30px;
+}
+
+.main__cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.main__cards:nth-child(1) {
+    background: url(../img/Black_Panther_film_poster\ 1.png) no-repeat top center / cover;
+    border-radius: 6px;
+}
+
+.main__cards:nth-child(2) {
+    background: url(../img/batman.png) no-repeat top center / cover;
+    border-radius: 6px;
+}
+
+.main__cards:nth-child(3) {
+    background: url(../img/gentlmen.png) no-repeat top center / cover;
+    border-radius: 6px;
+}
+
+.main__cards:nth-child(4) {
+    background: url(../img/lordr.png) no-repeat top center / cover;
+    border-radius: 6px;
+}
+
+.main__bg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(241, 129, 40, 0.35) 0%, rgba(0, 0, 0, 0.71) 51.04%, rgba(7, 15, 25, 0.8) 100%);
+    z-index: -1;
+    border-radius: 6px;
+}
+
+.span__icon {
+    padding-top: 54px;
+    font-size: 40px;
+    z-index: 1;
+}
+
+.main__cards-time {
+    padding-top: 12px;
+    z-index: 1;
+
+}
+
+.main__cards-duration {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    border: 1px solid #fff;
+    border-radius: 9px;
+    padding: 7px 28px;
+}
+
+.main__cards-desc {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding-bottom: 18px;
+}
+
+.main__cards-title {
+    font-family: Montserrat;
+    font-size: 22px;
+    font-weight: 400;
+    z-index: 1;
+}
+
+.main__cards-text {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    z-index: 1;
+    text-align: center;
+
+}
+
+@media screen and (max-width:992px) {
+    .main__grid {
+        grid-template-columns: repeat(2, 255px);
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .main__grid {
+        grid-template-columns: 255px;
+    }
+}
